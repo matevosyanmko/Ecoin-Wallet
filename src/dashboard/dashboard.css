@@ -1,0 +1,268 @@
+@keyframes body {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dashboard {
+  animation: body 0.5s ease-in;
+  /* background: url(../assets/bg.jpg); */
+  background-size: 80px;
+  background-repeat: repeat-x repeat-y;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.dashboardHeader {
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.dashboardHeader > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboardHeader > div:nth-child(1) {
+  font-size: 32px;
+  color: white;
+}
+.dashboardHeaderMenu * {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.dashboardHeader > .dashboardHeaderMenu {
+  width: auto;
+  background: none;
+  outline: none;
+  justify-content: space-between;
+}
+
+.dashboardHeaderMenu img {
+  height: 35px;
+}
+.dashboardHeaderMenu img:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dashboardBody {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1300px;
+  margin: auto;
+  height: auto;
+}
+/* widgets */
+.col-1 {
+  width: 350px;
+}
+.col-2 {
+  width: 450px;
+}
+.itemParent {
+  margin: 20px 0px;
+}
+.item {
+  width: 100%;
+  height: 350px !important;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  display: flex;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 20px 0px;
+  justify-content: center;
+}
+.itemLoader {
+  display: block;
+  margin: auto;
+}
+.item h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.item:hover {
+  /* background: rgba(0,0,0, 0.2); */
+  /* transform: scale(1.05); */
+}
+.services {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.servicesBody {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.service {
+  transition: all 0.5s ease;
+  width: 130px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 5px;
+}
+.service:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.service img {
+  width: 50px;
+}
+/* profile widget */
+.profile {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile .spaceCell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spaceCell i:hover {
+  cursor: pointer;
+}
+/* card comopnent */
+.cardComponent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardComponent img {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* profile widget */
+/* balance widget */
+.balance {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.balance p {
+  font-size: 22px;
+}
+
+/* exchange widget */
+.exchange {
+  display: flex;
+  flex-direction: column;
+}
+.exchange input {
+  width: 100%;
+}
+.exchange tbody td {
+  width: 100px;
+}
+/* payment history */
+.payment {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: block;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0; */
+}
+.rel {
+  position: relative;
+}
+.ico {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.ico:hover {
+  cursor: pointer;
+}
+/* transfer block */
+.transfer {
+  flex-direction: column;
+}
+.succesTransfer {
+  padding: 20px;
+}
+.cursor:hover {
+  cursor: pointer !important;
+}
+.payment table th {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
+.payment table th {
+  padding: 10px !important;
+}
+.payment table td {
+  padding: 2px !important;
+}
+.historyState {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.historyState li {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 2px;
+  transition: 0.2s ease;
+}
+.historyState li:hover {
+  background: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+.passiveView {
+  opacity: 0.2;
+}
+.activeView {
+  opacity: 1;
+}
+
+/* some importants :) */
+.exchange .item {
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  transition: all 0.2s ease !important;
+}
+.exchange .item:hover {
+  background: black !important;
+  color: white !important;
+}
