@@ -17,16 +17,20 @@
   left: 0;
   top: 0;
   animation: modal 0.5s ease;
+  z-index: 1000 !important;
 }
-.overlayAlert{
+.overlayAlert {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 10px;
+}
+.overlayAlert > * {
+  margin: 20px 0;
 }
 .addCardForm {
   border-radius: 10px;

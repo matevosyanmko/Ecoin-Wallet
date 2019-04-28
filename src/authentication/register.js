@@ -41,7 +41,8 @@ export default class Register extends React.Component {
             email: email,
             password: passwordOne,
             balance: 0.0,
-            uid: authUser.user.uid
+            uid: authUser.user.uid,
+            friends: []
           });
         this.props.changeView();
       })
@@ -70,12 +71,14 @@ export default class Register extends React.Component {
           <Input
             type="text"
             icon={{ name: "user", circular: true, color: "black" }}
-            placeholder="Full Name"
+            placeholder="Անուն Ազգանուն"
             size="big"
             iconPosition="left"
             name="username"
             onChange={this.handleInputChange}
             value={username}
+            maxlength="10"
+            required
           />
 
           <Input
@@ -87,35 +90,38 @@ export default class Register extends React.Component {
               bordered: true
             }}
             iconPosition="left"
-            placeholder="Email"
+            placeholder="Էլ-փոստ"
             size="big"
             name="email"
             onChange={this.handleInputChange}
             value={email}
+            required
           />
           <Input
             type="password"
             icon={{ name: "lock", circular: true, color: "black" }}
-            placeholder="Password"
+            placeholder="Գաղտնաբառ"
             size="big"
             iconPosition="left"
             name="passwordOne"
             onChange={this.handleInputChange}
             value={passwordOne}
+            required
           />
           <Input
             type="password"
             icon={{ name: "lock", circular: true, color: "black" }}
-            placeholder="Confirm password"
+            placeholder="Գաղտնաբառի կրկնություն"
             size="big"
             iconPosition="left"
             name="passwordTwo"
             onChange={this.handleInputChange}
             value={passwordTwo}
+            required
           />
           {error && ErrorMessage(error.message, this.toggleErrorMessage)}
           <Button secondary size="medium" disabled={isInvalid}>
-            Register
+            Գրանցվել
           </Button>
         </form>
       </div>

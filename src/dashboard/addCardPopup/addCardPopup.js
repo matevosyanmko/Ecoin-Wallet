@@ -56,9 +56,9 @@ export default class AddBankCard extends React.Component {
       <div id="overlay">
         {succes ? (
           <div className="overlayAlert">
-            <h2>Card added to your account</h2>
+            <h2>Քարտը ավելացված է</h2>
             <Button secondary size="medium" onClick={this.props.addCard}>
-              Close
+              Փակել
             </Button>
           </div>
         ) : (
@@ -72,12 +72,12 @@ export default class AddBankCard extends React.Component {
             />
 
             <form onSubmit={this.formSubmit} className="addCardForm">
-              <h2>Write Card Details</h2>
+              <h2>Ներմուծեք քարտի տվյալները</h2>
               <img src={CardImage} />
               <Input
                 type="text"
                 icon={{ name: "user square", circular: true, color: "black" }}
-                placeholder="FULL NAME"
+                placeholder="Անուն Ազգանուն"
                 size="small"
                 iconPosition="left"
                 onChange={this.handleInputChange}
@@ -94,7 +94,7 @@ export default class AddBankCard extends React.Component {
                   bordered: true
                 }}
                 iconPosition="left"
-                placeholder="CARD NUMBER"
+                placeholder="Քարտի համարը"
                 size="small"
                 onChange={this.handleInputChange}
                 name="cardNumber"
@@ -110,7 +110,7 @@ export default class AddBankCard extends React.Component {
                   bordered: true
                 }}
                 iconPosition="left"
-                placeholder="VALID UNTIL"
+                placeholder="Ժամկետը մինչև․․"
                 size="small"
                 onChange={this.handleInputChange}
                 name="validDate"
@@ -126,7 +126,7 @@ export default class AddBankCard extends React.Component {
                   bordered: true
                 }}
                 iconPosition="left"
-                placeholder="CVC2 / CVV2 / CID "
+                placeholder="CVC2 / CVV2 / CID կոդ "
                 size="small"
                 onChange={this.handleInputChange}
                 name="cv"
@@ -135,7 +135,7 @@ export default class AddBankCard extends React.Component {
               />
 
               <Button secondary size="medium">
-                Add Card
+                Ավելացնել
               </Button>
             </form>
           </>

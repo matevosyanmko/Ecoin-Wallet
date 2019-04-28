@@ -37,7 +37,7 @@ export default class Authentication extends React.Component {
                 this.setState({ view: "login" });
               }}
             >
-              Sign In
+              Մուտք գործել
             </Button>
             <Button.Or />
             <Button
@@ -46,7 +46,7 @@ export default class Authentication extends React.Component {
                 this.setState({ view: "register" });
               }}
             >
-              Register
+              Գրանցվել
             </Button>
           </Button.Group>
           <FirebaseContext.Consumer>

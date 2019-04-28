@@ -46,7 +46,6 @@ export default class Login extends React.Component {
       .catch(error => {
         this.setState({ error });
       });
-      
   };
   render() {
     const { error } = this.state;
@@ -58,7 +57,7 @@ export default class Login extends React.Component {
           <Input
             type="text"
             icon={{ name: "mail square", circular: true, color: "black" }}
-            placeholder="Email..."
+            placeholder="Էլ-փոստ"
             size="big"
             iconPosition="left"
             onChange={this.handleInputChange}
@@ -74,7 +73,7 @@ export default class Login extends React.Component {
               bordered: true
             }}
             iconPosition="left"
-            placeholder="Password..."
+            placeholder="Գաղտնաբառ"
             size="big"
             onChange={this.handleInputChange}
             name="password"
@@ -82,7 +81,7 @@ export default class Login extends React.Component {
           />
           {error && ErrorMessage(error.message, this.toggleErrorMessage)}
           <Button secondary size="medium">
-            Log in
+            Մուտք
           </Button>
         </form>
       </div>

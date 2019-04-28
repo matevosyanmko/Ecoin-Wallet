@@ -68,7 +68,7 @@ export default class BankCard extends React.Component {
           />
           <img src={CardImage} />
           <Button secondary size="medium" onClick={this.props.addCard}>
-            Add bank card
+            Ավելացնել քարտ
           </Button>
         </div>
       );

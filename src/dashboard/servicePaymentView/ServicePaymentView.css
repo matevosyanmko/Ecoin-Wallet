@@ -1,0 +1,16 @@
+.servicePayment {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.5);
+  width: 100%;
+  align-items: center;
+padding: 5px;
+}
+.servicePayment>*{
+    margin: 5px;
+    
+}
+
+.servicePayment img {
+  width: 50px;
+}

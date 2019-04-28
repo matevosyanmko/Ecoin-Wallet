@@ -30,7 +30,7 @@ export default class Exchange extends React.Component {
     const { currency, price } = this.state;
     let currentPrice = (price * currency.relativePrice).toFixed(2);
     return (
-      <Table inverted textAlign="center">
+      <Table  textAlign="center" color="white">
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>eCoin</Table.HeaderCell>
@@ -59,7 +59,7 @@ export default class Exchange extends React.Component {
                 value={price}
                 onChange={this.changePrice}
                 maxLength={4}
-                type="number"
+                type="number" 
               />
             </Table.Cell>
             <Table.Cell />
